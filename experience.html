@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>体验雅安</title>
+	<link rel="stylesheet" type="text/css" href="css/lbcommon.css">
+	<link rel="stylesheet" type="text/css" href="css/experience.css">
+	<link href="css/layout.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="css/experience-food.css">
+	<link rel="stylesheet" type="text/css" href="css/experience-shop.css">
+	<link rel="stylesheet" type="text/css" href="css/experience-play.css">
+	<link rel="stylesheet" type="text/css" href="css/experience-room.css">
+	
+
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/clamp.js"></script>
+	<script type="text/javascript" src="js/experience.js"></script>
+	<script type="text/javascript" src="js/experience-room.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="js/layout.js"></script>
+	 <style type="text/css">
+		.svg-map{
+			margin: 20px auto;
+			margin-bottom: 40px;
+		}
+        .svg-map svg path{
+            webkit-transition:.4s all;
+            transition:.4s all;
+            /*fill:#fff;*/
+        }
+        .svg-map svg path:hover{
+            fill:#00ff00;
+        }
+        div.svgcontain{
+        	text-align: center;
+        }
+        
+    </style>
+</head>
+<body onresize="screenInfo()">
+	<div class="header">
+    <div class="row-1">
+        <img class="logo" src="images/logo.png"/>
+        <ul class="navigation-1">
+            <li><p class="name">雅安资讯门户</p></li>
+            <li><img class="weather-img" src="images/weather-default.png"/></li>
+            <li><p class="weather-info">0°C~12°C&nbsp;东风小于三级 &nbsp;星期二</p></li>
+            <li><a class="weather-more" href="http://www.nmc.gov.cn/publish/forecast/ASC/yaan.html">详情&gt;&gt;</a></li>
+        </ul>
+    </div>
+    <div class="row-2">
+       <ul class="navigation-2">
+           <li><a href="#" id="yaan"><img class="home" src="images/home.png"/></a></li>
+           <li><a href="#" id="pwya"><p class="nav">品味雅安</p></a></li>
+           <li><a href="#" id="tyya"><p class="nav">体验雅安</p></a></li>
+           <li><a href="#" id="lxyj"><p class="nav">旅行印记</p></a></li>
+           <li><a href="#" id="hdss"><p class="nav">活动盛事</p></a></li>
+           <li><a href="#" id="cyzs"><p class="nav">出游助手</p></a></li>
+           <li><a href="#" id="xhx"><p class="nav">西环线</p></a></li>
+           <li><a href="#" id="yah"><p class="nav">雅安汇</p></a></li>
+       </ul>
+    </div>
+    <div class="row-3" id="menu">
+        <ul class="menu-content">
+
+        </ul>
+    </div>
+</div>
+<div class="headimg">
+		<div class='navbg'></div>
+		<div class='smallnavCon'>
+			<div class="smallnav">
+				<a href="#">首页</a><span> &gt; 体验雅安</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="excontent">
+		<div class="lbheadcontent">
+			<img src="images/experience/head_show.png">
+			<div class="sumcontain">
+				<p class="sumtitle">经典景区</p>
+				<p class="sumdesc">参数：Array为单元格区域或数组常数；Row_num为数组中某行的行序号，函数从该行返回数值。如果省略row_num，则必须有column_num；Column_num是数组中某列的列序号，函数从该列返回数值。如果省略column_num，则必须有row_num。Reference是对一个或多个单元格区域的引用</p>
+				<div class="chr"></div>
+				<div class="spots">
+					<a href="#">二郎山景区</a>
+					<a href="#">二2景区</a>
+					<a href="#">景区</a>
+					<a href="#">二郎山景区</a>
+					<a href="#">二郎山景区</a>
+					<a href="#">二郎山景区</a>
+					<a href="#">二郎山景区</a>
+				</div>
+			</div>
+			<a href="" class="searchmore"></a>
+		</div>
+	</div>
+	<div class="lbcontent">
+		<ul class="tabs">
+			<li><a href="#tab1"><img src="images/experience/food_d.png"></a></li>
+			<li><a href="#tab2"><img src="images/experience/play.png"></a></li>
+			<li><a href="#tab3"><img src="images/experience/shoping.png"></a></li>
+			<li><a href="#tab4"><img src="images/experience/room.png"></a></li>
+			<li><a href="#tab5"><img src="images/experience/traffic.png"></a></li>
+		</ul>
+		<div id="tab1">
+			<div class="exdesc">
+				<p class="itemtitle">美食概述</p>
+				<p>正所谓“吃在中国，味在雅安”。</p>
+				<p>雅安菜集川菜之精华，兼具”三香三椒三料“之大成，有”七滋八味九杂“之变化，种类包罗万象，滋味千变万化，可谓是中华饮食文化的川西典型代表。</p>
+				<p>雅食之美，自由得天独厚的缘由。且看雅安南北气候迥异，物产丰饶。北有鲜美雅雨畅游青衣，南有划过万顷星罗河川。丝路绵延，茶马往来，经济和文化繁荣的同时，雅安特有的地方饮食文化也渐渐形成。</p>
+			</div>
+			<div class="foodrecomend">
+				<p class="itemtitle">美食推荐</p>
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<div class="lcell">
+								<img src="images/experience/food/1.png">
+								<div class="ldesc">
+									<p>全茶宴</p>
+									<div>
+										<p>且看雅安南北气候迥异，物产丰饶。北有鲜美雅雨畅游青衣，南有划过万顷星罗河川。丝路绵延</p>
+									</div>
+									<a href="#"><img src="images/experience/search_more.png"></a>
+								</div>
+							</div>
+	                       <div class="lcell">
+								<img src="images/experience/food/2.png">
+								<div class="ldesc">
+									<p>雅鱼宴</p>
+									<div>
+										<p>且看雅安南北气候迥异，物产丰饶。北有鲜美雅雨畅游青衣，南有划过万顷星罗河川。丝路绵延</p>
+									</div>
+									<a href="#"><img src="images/experience/search_more.png"></a>
+								</div>
+							</div>
+							<div class="lcell">
+								<img src="images/experience/food/3.png">
+								<div class="ldesc">
+									<p>荥经挞挞面</p>
+									<div>
+										<p>且看雅安南北气候迥异，物产丰饶。北有鲜美雅雨畅游青衣，南有划过万顷星罗河川。丝路绵延</p>
+									</div>
+									<a href="#"><img src="images/experience/search_more.png"></a>
+								</div>
+							</div>
+							<div class="lcell">
+								<img src="images/experience/food/4.png">
+								<div class="ldesc">
+									<p>汉源榨榨面</p>
+									<div>
+										<p>且看雅安南北气候迥异，物产丰饶。北有鲜美雅雨畅游青衣，南有划过万顷星罗河川。丝路绵延</p>
+									</div>
+									<a href="#"><img src="images/experience/search_more.png"></a>
+								</div>
+							</div>
+							<div class="lcell">
+								<img src="images/experience/food/5.png">
+								<div class="ldesc">
+									<p>顺河抄手</p>
+									<div>
+										<p>且看雅安南北气候迥异，物产丰饶。北有鲜美雅雨畅游青衣，南有划过万顷星罗河川。丝路绵延</p>
+									</div>
+									<a href="#"><img src="images/experience/search_more.png"></a>
+								</div>
+							</div>
+							<div class="lcell">
+								<img src="images/experience/food/6.png">
+								<div class="ldesc">
+									<p>宝兴老腊肉</p>
+									<div>
+										<p>且看雅安南北气候迥异，物产丰饶。北有鲜美雅雨畅游青衣，南有划过万顷星罗河川。丝路绵延</p>
+									</div>
+									<a href="#"><img src="images/experience/search_more.png"></a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="lcell">
+								<img src="images/experience/food/6.png">
+								<div class="ldesc">
+									<p>宝兴老腊肉</p>
+									<div>
+										<p>且看雅安南北气候迥异，物产丰饶。北有鲜美雅雨畅游青衣，南有划过万顷星罗河川。丝路绵延</p>
+									</div>
+									<a href="#"><img src="images/experience/search_more.png"></a>
+								</div>
+							</div>
+	                        <a href="#"><img src="images/experience/food/2.png"></a>
+	                        <a href="#"><img src="images/experience/food/3.png"></a>
+	                        <a href="#"><img src="images/experience/food/4.png"></a>
+	                        <a href="#"><img src="images/experience/food/5.png"></a>
+	                        <a href="#"><img src="images/experience/food/6.png"></a>
+						</li>
+						<li>
+					 		<div class="lcell">
+								<img src="images/experience/food/4.png">
+								<div class="ldesc">
+									<p>汉源榨榨面</p>
+									<div>
+										<p>且看雅安南北气候迥异，物产丰饶。北有鲜美雅雨畅游青衣，南有划过万顷星罗河川。丝路绵延</p>
+									</div>
+									<a href="#"><img src="images/experience/search_more.png"></a>
+								</div>
+							</div>
+	                        <a href="#"><img src="images/experience/food/2.png"></a>
+	                        <a href="#"><img src="images/experience/food/3.png"></a>
+	                        <a href="#"><img src="images/experience/food/4.png"></a>
+	                        <a href="#"><img src="images/experience/food/5.png"></a>
+	                        <a href="#"><img src="images/experience/food/6.png"></a>
+						</li>
+					</ul>
+				</div>	
+			</div>
+			<div class="famous">
+				<p class='itemtitle'>名菜馆</p>
+				<div class="famouscontent">
+					<div class="lcell">
+								<img src="images/experience/food/4.png">
+								<div class="ldesc">
+									<p>汉源榨榨面</p>
+									<div>
+										<p>且看雅安南北气候迥异，物产丰饶。北有鲜美雅雨畅游青衣，南有划过万顷星罗河川。丝路绵延</p>
+									</div>
+									<a href="#"><img src="images/experience/search_more.png"></a>
+								</div>
+							</div>
+					<div class="famousdsc">
+						<ul>
+							<li>师傅菜馆</li>
+							<li>师傅菜馆</li>
+							<li>师傅菜馆师傅菜馆</li>
+							<li>师傅菜馆</li>
+							<li>师傅师傅菜馆</li>
+							<li>师傅菜馆</li>
+							<li>师傅菜馆</li>
+							<li>师傅师傅菜馆</li>
+						</ul>
+					</div>
+					<a href="#"><img src="images/experience/search_more.png"></a>
+				</div>
+			</div>
+			<div class="foodstreet">
+				<p class='itemtitle'>美食街</p>
+				<div>
+					<div class="lcell">
+						<img src="images/experience/food/b1.png">
+						<div class="ldesc">
+							<p>川农大美食街</p>
+							<div>
+								<p>且看雅安南北气候迥异，物产丰饶。北有鲜美雅雨畅游青衣，南有划过万顷星罗河川。丝路绵延</p>
+							</div>
+							<a href="#"><img src="images/experience/search_more.png"></a>
+						</div>
+					</div>
+					<div class="lcell">
+						<img src="images/experience/food/b2.png">
+						<div class="ldesc">
+							<p>羌江南路美食街</p>
+							<div>
+								<p>且看雅安南北气候迥异，物产丰饶。北有鲜美雅雨畅游青衣，南有划过万顷星罗河川。丝路绵延</p>
+							</div>
+							<a href="#"><img src="images/experience/search_more.png"></a>
+						</div>
+					</div>
+					<div class="lcell">
+						<img src="images/experience/food/b3.png">
+						<div class="ldesc">
+							<p>沿江路美食街</p>
+							<div>
+								<p>且看雅安南北气候迥异，物产丰饶。北有鲜美雅雨畅游青衣，南有划过万顷星罗河川。丝路绵延</p>
+							</div>
+							<a href="#"><img src="images/experience/search_more.png"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div id="tab2">
+			<div class="exdesc">
+				<p class="itemtitle">娱乐概述</p>
+				<p>没能早一点进行卷积网络相关研究的原因相当简单：缺乏软件和数据。一到贝尔实验室之后，我接触到了大量数据集和运行飞快的电脑（在当时算是），因而可以试着构建完整的卷积网络，而且令人惊喜的是其运行良好（尽管需要两周的训练）。</p>
+			</div>
+			<div class="shoprecomend">
+				<p class="itemtitle">特惠推荐</p>
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<a href="#"><img src="images/experience/play/recomend1.png"></a>
+						</li>
+						<li>
+							<a href="#"><img src="images/experience/play/recomend1.png"></a>
+						</li>
+						<li>
+					 		<a href="#"><img src="images/experience/play/recomend1.png"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="flplay">
+				<p class="itemtitle">娱乐分类</p>
+				<div class="flplaycell">
+					<img src="images/experience/play/cl.png">
+					<div class="flplaydesc">
+						<div class="cellname">
+							<span>茶楼</span>
+							<a href="#">查看更多</a>
+						</div>
+						<div class="descrition">
+							<p>
+								通过这个例子是不是很方便的把这个效果做出来了呢？而且看看我们的代码，是不是很简洁呢！哈哈或许还有更好的方法来实现，我们可以一起探讨。我 个人感觉其实div+css是很好且看的代码，是不是很简洁呢！哈哈或许还有更好的方法来实现，我们可以一起探讨。我 个人感觉其实div+css是很好且看看我们的代码，是不是很简洁呢！哈或许还有更好的方法来实现，我们可以一起探讨。我个人感觉其实div+css是很的一门很容易手OVER
+							</p>
+						</div>
+						<div class="cellitem ctwo">
+							<div>
+								<a href="">阿布A</a>
+								<a href="">阿布A</a>
+								<a href="">阿布</a>
+								<a href="">阿布</a>
+							</div>
+							<div>
+								<a href="">阿布B</a>
+								<a href="">阿布B</a>
+								<a href="">阿布B</a>
+							</div>
+						</div>
+					</div>
+				</div><div class="flplaycell">
+					<img src="images/experience/play/jb.png">
+					<div class="flplaydesc">
+						<div class="cellname">
+							<span>酒吧</span>
+							<a href="#">查看更多</a>
+						</div>
+						<div class="descrition">
+							<p>
+								通过这个例子是不是很方便的把这个效果做出来了呢？而且看看我们的代码，是不是很简洁呢！哈哈或许还有更好的方法来实现，我们可
+							</p>
+						</div>
+						<div class="cellitem ctwo">
+							<div>
+								<a href="">阿布A</a>
+								<a href="">阿布A</a>
+								<a href="">阿布</a>
+								<a href="">阿布</a>
+							</div>
+							<div>
+								<a href="">阿布B</a>
+								<a href="">阿布B</a>
+								<a href="">阿布B</a>
+							</div>
+						</div>
+					</div>
+				</div><div class="flplaycell">
+					<img src="images/experience/play/kfg.png">
+					<div class="flplaydesc">
+						<div class="cellname">
+							<span>咖啡馆</span>
+							<a href="#">查看更多</a>
+						</div>
+						<div class="descrition">
+							<p>
+								通过这个例子是不是很方便的把这个效果做出来了呢？而且看看我们的代码，是不是很简洁呢！哈哈或许还有更好的方法来实现，我们可
+							</p>
+						</div>
+						<div class="cellitem ctwo">
+							<div>
+								<a href="">阿布A</a>
+								<a href="">阿布A</a>
+								<a href="">阿布</a>
+								<a href="">阿布</a>
+							</div>
+							<div>
+								<a href="">阿布B</a>
+								<a href="">阿布B</a>
+								<a href="">阿布B</a>
+							</div>
+						</div>
+					</div>
+				</div><div class="flplaycell">
+					<img src="images/experience/play/lxy.png">
+					<div class="flplaydesc">
+						<div class="cellname">
+							<span>疗修养</span>
+							<a href="#">查看更多</a>
+						</div>
+						<div class="descrition">
+							<p>
+								通过这个例子是不是很方便的把这个效果做出来了呢？而且看看我们的代码，是不是很简洁呢！哈哈或许还有更好的方法来实现，我们可
+							</p>
+						</div>
+						<div class="cellitem ctwo">
+							<div>
+								<a href="">阿布A</a>
+								<a href="">阿布A</a>
+								<a href="">阿布</a>
+								<a href="">阿布</a>
+							</div>
+							<div>
+								<a href="">阿布B</a>
+								<a href="">阿布B</a>
+								<a href="">阿布B</a>
+							</div>
+						</div>
+					</div>
+				</div><div class="flplaycell">
+					<img src="images/experience/play/ss.png">
+					<div class="flplaydesc">
+						<div class="cellname">
+							<span>时尚雅安</span>
+							<a href="#">查看更多</a>
+						</div>
+						<div class="descrition">
+							<p>
+								通过这个例子是不是很方便的把这个效果做出来了呢？而且看看我们的代码，是不是很简洁呢！哈哈或许还有更好的方法来实现，我们可
+							</p>
+						</div>
+						<div class="cellitem ctwo">
+							<div>
+								<a href="">阿布A</a>
+								<a href="">阿布A</a>
+								<a href="">阿布</a>
+								<a href="">阿布</a>
+							</div>
+							<div>
+								<a href="">阿布B</a>
+								<a href="">阿布B</a>
+								<a href="">阿布B</a>
+							</div>
+						</div>
+					</div>
+				</div><div class="flplaycell">
+					<img src="images/experience/play/mrmf.png">
+					<div class="flplaydesc">
+						<div class="cellname">
+							<span>美容美发</span>
+							<a href="#">查看更多</a>
+						</div>
+						<div class="descrition">
+							<p>
+								通过这个例子是不是很方便的把这个效果做出来了呢？而且看看我们的代码，是不是很简洁呢！哈哈或许还有更好的方法来实现，我们可
+							</p>
+						</div>
+						<div class="cellitem ctwo">
+							<div>
+								<a href="">阿布A</a>
+								<a href="">阿布A</a>
+								<a href="">阿布</a>
+								<a href="">阿布</a>
+							</div>
+							<div>
+								<a href="">阿布B</a>
+								<a href="">阿布B</a>
+								<a href="">阿布B</a>
+							</div>
+						</div>
+					</div>
+				</div><div class="flplaycell">
+					<img src="images/experience/play/bj.png">
+					<div class="flplaydesc">
+						<div class="cellname">
+							<span>保健</span>
+							<a href="#">查看更多</a>
+						</div>
+						<div class="descrition">
+							<p>
+								通过这个例子是不是很方便的把这个效果做出来了呢？而且看看我们的代码，是不是很简洁呢！哈哈或许还有更好的方法来实现，我们可
+							</p>
+						</div>
+						<div class="cellitem ctwo">
+							<div>
+								<a href="">阿布A</a>
+								<a href="">阿布A</a>
+								<a href="">阿布</a>
+								<a href="">阿布</a>
+							</div>
+							<div>
+								<a href="">阿布B</a>
+								<a href="">阿布B</a>
+								<a href="">阿布B</a>
+							</div>
+						</div>
+					</div>
+				</div><div class="flplaycell">
+					<img src="images/experience/play/yt.png">
+					<div class="flplaydesc">
+						<div class="cellname">
+							<span>童婴</span>
+							<a href="#">查看更多</a>
+						</div>
+						<div class="descrition">
+							<p>
+								通过这个例子是不是很方便的把这个效果做出来了呢？而且看看我们的代码，是不是很简洁呢！哈哈或许还有更好的方法来实现，我们可
+							</p>
+						</div>
+						<div class="cellitem ctwo">
+							<div>
+								<a href="">阿布A</a>
+								<a href="">阿布A</a>
+								<a href="">阿布</a>
+								<a href="">阿布</a>
+							</div>
+							<div>
+								<a href="">阿布B</a>
+								<a href="">阿布B</a>
+								<a href="">阿布B</a>
+							</div>
+						</div>
+					</div>
+				</div><div class="flplaycell">
+					<img src="images/experience/play/ydxx.png">
+					<div class="flplaydesc">
+						<div class="cellname">
+							<span>运动休闲</span>
+							<a href="#">查看更多</a>
+						</div>
+						<div class="descrition">
+							<p>
+								通过这个例子是不是很方便的把这个效果做出来了呢？而且看看我们的代码，是不是很简洁呢！哈哈或许还有更好的方法来实现，我们可
+							</p>
+						</div>
+						<div class="cellitem ctwo">
+							<div>
+								<a href="">阿布A</a>
+								<a href="">阿布A</a>
+								<a href="">阿布</a>
+								<a href="">阿布</a>
+							</div>
+							<div>
+								<a href="">阿布B</a>
+								<a href="">阿布B</a>
+								<a href="">阿布B</a>
+							</div>
+						</div>
+					</div>
+				</div><div class="flplaycell">
+					<img src="images/experience/play/gyms.png">
+					<div class="flplaydesc">
+						<div class="cellname">
+							<span>工艺美术</span>
+							<a href="#">查看更多</a>
+						</div>
+						<div class="descrition">
+							<p>
+								通过这个例子是不是很方便的把这个效果做出来了呢？而且看看我们的代码，是不是很简洁呢！哈哈或许还有更好的方法来实现，我们可
+							</p>
+						</div>
+						<div class="cellitem ctwo">
+							<div>
+								<a href="">阿布A</a>
+								<a href="">阿布A</a>
+								<a href="">阿布</a>
+								<a href="">阿布</a>
+							</div>
+							<div>
+								<a href="">阿布B</a>
+								<a href="">阿布B</a>
+								<a href="">阿布B</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div id="tab3">
+			<div class="exdesc">
+				<p class="itemtitle">购物概述</p>
+				<p>没能早一点进行卷积网络相关研究的原因相当简单：缺乏软件和数据。一到贝尔实验室之后，我接触到了大量数据集和运行飞快的电脑（在当时算是），因而可以试着构建完整的卷积网络，而且令人惊喜的是其运行良好（尽管需要两周的训练）。</p>
+			</div>
+			<div class="shoprecomend">
+				<p class='itemtitle'>特惠推荐</p>
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<a href="#"><img src="images/experience/shop/recomend1.png"></a>
+						</li>
+						<li>
+							<a href="#"><img src="images/experience/shop/recomend1.png"></a>
+						</li>
+						<li>
+					 		<a href="#"><img src="images/experience/shop/recomend1.png"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="shopfl">
+				<p class="itemtitle">购物分类</p>
+				<div class="flitem">
+					<img src="images/experience/shop/2.png">
+					<div class="flitemdesc atright">
+						<div class="fltitlecontain">
+							<p class="flsmalltitle">传统名特产</p>
+							<a href="#">查看更多 >></a>
+						</div>
+						
+						<p>在过去的20多年中，有许许多多关于卷积网络和深度学习的想法都默默无闻，没人关心那些，发表论文总是十分艰难，因此有很多想法并未经过尝试或发表，再或者就是尝试发表了但却被完全忽视并迅速忘却了，谁还记得基于人脸监测的首个有效尝试使用的是卷积网络（早在1993年，比 Viola-Jones 还要早八年）？</p>
+						<div class="chr"></div>
+						<div class="fltcname">
+							<a href="">二郎神茶叶</a>
+							<a href="">二郎神茶叶</a>
+							<a href="">二郎神茶叶</a>
+							<a href="">二郎神茶叶</a>
+							<a href="">二郎神茶叶</a>
+							<a href="">二郎神茶叶</a>
+						</div>
+					</div>
+					
+				</div>
+				<div class="flitem">
+					<div class="flitemdesc atleft">
+						<div class="fltitlecontain">
+							<p class="flsmalltitle">传统名特产</p>
+							<a href="#">查看更多 >></a>
+						</div>
+						
+						<p>在过去的20多年中，有许许多多关于卷积网络和深度学习的想法都默默无闻，没人关心那些，发表论文总是十分艰难，因此有很多想法并未经过尝试或发表，再或者就是尝试发表了但却被完全忽视并迅速忘却了，谁还记得基于人脸监测的首个有效尝试使用的是卷积网络（早在1993年，比 Viola-Jones 还要早八年）？</p>
+						<div class="chr"></div>
+						<div class="fltcname">
+							<a href="">二郎神茶叶</a>
+							<a href="">二郎神茶叶</a>
+							<a href="">二郎神茶叶</a>
+							<a href="">二郎神茶叶</a>
+							<a href="">二郎神茶叶</a>
+							<a href="">二郎神茶叶</a>
+						</div>
+					</div>
+					<img src="images/experience/shop/2.png" class="">
+				</div>
+				<div class="flitem">
+					<img src="images/experience/shop/2.png">
+					<div class="flitemdesc atright">
+						<div class="fltitlecontain">
+							<p class="flsmalltitle">名品商厦</p>
+							<a href="#">查看更多 >></a>
+						</div>
+						
+						<p>在过去的20多年中，有许许多多关于卷积网络和深度学习的想法都默默无闻，没人关心那些，发表论文总是十分艰难，因此有很多想法并未经过尝试或发表，再或者就是尝试发表了但却被完全忽视并迅速忘却了，谁还记得基于人脸监测的首个有效尝试使用的是卷积网络（早在1993年，比 Viola-Jones 还要早八年）？</p>
+						<div class="chr"></div>
+						<div class="fltcname">
+							<a href="">二郎神茶叶</a>
+							<a href="">二郎神茶叶</a>
+							<a href="">二郎神茶叶</a>
+							<a href="">二郎神茶叶</a>
+							<a href="">二郎神茶叶</a>
+							<a href="">二郎神茶叶</a>
+						</div>
+					</div>
+				</div>
+			</div>
+				
+		</div>
+		<div id="tab4">
+			<div class="exdesc">
+				<p class="itemtitle">住宿概述</p>
+				<p>没能早一点进行卷积网络相关研究的原因相当简单：缺乏软件和数据。一到贝尔实验室之后，我接触到了大量数据集和运行飞快的电脑（在当时算是），因而可以试着构建完整的卷积网络，而且令人惊喜的是其运行良好（尽管需要两周的训练）。</p>
+			</div>
+			<div class="shoprecomend">
+				<p class="itemtitle">特优推荐</p>
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<a href="#"><img src="images/experience/room/recomend1.png"></a>
+						</li>
+						<li>
+							<a href="#"><img src="images/experience/room/recomend1.png"></a>
+						</li>
+						<li>
+					 		<a href="#"><img src="images/experience/room/recomend1.png"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<p class="itemtitle">住宿分类</p>
+			<ul class="rtabs">
+				<!-- <div class="zsline"></div> -->
+				<li><a href="#rtab1"><img src="images/experience/room/jd_btn1_d.png"></a></li>
+				<li><a href="#rtab2"><img src="images/experience/room/jd_btn2.png"></a></li>
+				<li><a href="#rtab3"><img src="images/experience/room/jd_btn3.png"></a></li>
+				<li><a href="#rtab4"><img src="images/experience/room/jd_btn4.png"></a></li>
+
+			</ul>
+
+			<div id='rtab1'>
+				<div class='clearfix'>
+					<div class='rcell'>
+						<img src="images/experience/room/r1.png">
+						<p>黄龙饭店</p>
+						<p>地址：杭州市路120号</p>
+						<p>电话：12938273645</p>
+						<a href="#"><img src="images/experience/room/more.png"></a>
+					</div><div class='rcell'>
+						<img src="images/experience/room/r1.png">
+						<p>黄龙饭店</p>
+						<p>地址：杭州市路120号</p>
+						<p>电话：12938273645</p>
+						<a href="#"><img src="images/experience/room/more.png"></a>
+					</div><div class='rcell'>
+						<img src="images/experience/room/r1.png">
+						<p>黄龙饭店</p>
+						<p>地址：杭州市路120号</p>
+						<p>电话：12938273645</p>
+						<a href="#"><img src="images/experience/room/more.png"></a>
+					</div><div class='rcell'>
+						<img src="images/experience/room/r1.png">
+						<p>黄龙饭店</p>
+						<p>地址：杭州市路120号</p>
+						<p>电话：12938273645</p>
+						<a href="#"><img src="images/experience/room/more.png"></a>
+					</div><div class='rcell'>
+						<img src="images/experience/room/r1.png">
+						<p>黄龙饭店</p>
+						<p>地址：杭州市路120号</p>
+						<p>电话：12938273645</p>
+						<a href="#"><img src="images/experience/room/more.png"></a>
+					</div><div class='rcell'>
+						<img src="images/experience/room/r1.png">
+						<p>黄龙饭店</p>
+						<p>地址：杭州市路120号</p>
+						<p>电话：12938273645</p>
+						<a href="#"><img src="images/experience/room/more.png"></a>
+					</div>
+				</div>
+			</div>
+			<div id='rtab2'>
+				<div class='clearfix'>
+					<div class='rcell'>
+						<img src="images/experience/room/r1.png">
+						<p>黄龙饭店</p>
+						<p>地址：杭州市路120号</p>
+						<p>电话：12938273645</p>
+						<a href="#"><img src="images/experience/room/more.png"></a>
+					</div><div class='rcell'>
+						<img src="images/experience/room/r1.png">
+						<p>黄龙饭店</p>
+						<p>地址：杭州市路120号</p>
+						<p>电话：12938273645</p>
+						<a href="#"><img src="images/experience/room/more.png"></a>
+					</div><div class='rcell'>
+						<img src="images/experience/room/r1.png">
+						<p>黄龙饭店</p>
+						<p>地址：杭州市路120号</p>
+						<p>电话：12938273645</p>
+						<a href="#"><img src="images/experience/room/more.png"></a>
+					</div><div class='rcell'>
+						<img src="images/experience/room/r1.png">
+						<p>黄龙饭店</p>
+						<p>地址：杭州市路120号</p>
+						<p>电话：12938273645</p>
+						<a href="#"><img src="images/experience/room/more.png"></a>
+					</div><div class='rcell'>
+						<img src="images/experience/room/r1.png">
+						<p>黄龙饭店</p>
+						<p>地址：杭州市路120号</p>
+						<p>电话：12938273645</p>
+						<a href="#"><img src="images/experience/room/more.png"></a>
+					</div><div class='rcell'>
+						<img src="images/experience/room/r1.png">
+						<p>黄龙饭店</p>
+						<p>地址：杭州市路120号</p>
+						<p>电话：12938273645</p>
+						<a href="#"><img src="images/experience/room/more.png"></a>
+					</div>
+				</div>
+			</div>
+			<div id='rtab3'>
+				<div class='clearfix'>
+					<div class='rcell'>
+						<img src="images/experience/room/r1.png">
+						<p>黄龙饭店</p>
+						<p>地址：杭州市路120号</p>
+						<p>电话：12938273645</p>
+						<a href="#"><img src="images/experience/room/more.png"></a>
+					</div><div class='rcell'>
+						<img src="images/experience/room/r1.png">
+						<p>黄龙饭店</p>
+						<p>地址：杭州市路120号</p>
+						<p>电话：12938273645</p>
+						<a href="#"><img src="images/experience/room/more.png"></a>
+					</div><div class='rcell'>
+						<img src="images/experience/room/r1.png">
+						<p>黄龙饭店</p>
+						<p>地址：杭州市路120号</p>
+						<p>电话：12938273645</p>
+						<a href="#"><img src="images/experience/room/more.png"></a>
+					</div><div class='rcell'>
+						<img src="images/experience/room/r1.png">
+						<p>黄龙饭店</p>
+						<p>地址：杭州市路120号</p>
+						<p>电话：12938273645</p>
+						<a href="#"><img src="images/experience/room/more.png"></a>
+					</div>
+				</div>
+			</div>
+			<div id='rtab4'>
+				<div class='clearfix'>
+					<div class='rcell'>
+						<img src="images/experience/room/r1.png">
+						<p>黄龙饭店</p>
+						<p>地址：杭州市路120号</p>
+						<p>电话：12938273645</p>
+						<a href="#"><img src="images/experience/room/more.png"></a>
+					</div><div class='rcell'>
+						<img src="images/experience/room/r1.png">
+						<p>黄龙饭店</p>
+						<p>地址：杭州市路120号</p>
+						<p>电话：12938273645</p>
+						<a href="#"><img src="images/experience/room/more.png"></a>
+					</div><div class='rcell'>
+						<img src="images/experience/room/r1.png">
+						<p>黄龙饭店</p>
+						<p>地址：杭州市路120号</p>
+						<p>电话：12938273645</p>
+						<a href="#"><img src="images/experience/room/more.png"></a>
+					</div><div class='rcell'>
+						<img src="images/experience/room/r1.png">
+						<p>黄龙饭店</p>
+						<p>地址：杭州市路120号</p>
+						<p>电话：12938273645</p>
+						<a href="#"><img src="images/experience/room/more.png"></a>
+					</div><div class='rcell'>
+						<img src="images/experience/room/r1.png">
+						<p>黄龙饭店</p>
+						<p>地址：杭州市路120号</p>
+						<p>电话：12938273645</p>
+						<a href="#"><img src="images/experience/room/more.png"></a>
+					</div>
+				</div>
+		</div>
+	</div>
+		<div id="tab5">
+			<div class="exdesc">
+				<p class="itemtitle">交通概述</p>
+				<p>文月学园高中部二年级，属于F班，异端审问会会长。虽然比较擅长对出场多次的学生作假动作战，但那样的任务很多。在F班的影响力仅次于雄二。对中华料理有着特殊地拘泥。召唤獣的装备是衬袄和棒。</p>
+				<p>曾在与D班的战斗中在学校的广播室叫来教数学的船越老师，称主角吉井明久要“跨越学生与老师的界限，以一个男人的身份与你讲很重要的事”。虽帮助F班战胜D班，但被明久怀恨在心。</p>
+			</div>
+			
+			<p class="itemtitle">交通分类</p>
+			<div class='svgcontain'>
+			<div class="svg-map">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg  xmlns="http://www.w3.org/2000/svg" width="858.70367"height="826.22498">
+
+<g
+        inkscape:label="Layer 1"
+        inkscape:groupmode="layer"
+        id="layer1"
+        transform="translate(0,-226.13717)">
+       
+<g
+        id="g3348"
+        transform="matrix(1.25,0,0,1.25,-2.5213259,224.87467)">
+         <a xlink:href="#a">
+    <path
+            id="path3318"
+            d="m 236.24,64.09 c 36.63,-21.07 73.32,-42.04 109.97,-63.08 36.6,21.11 73.16,42.29 109.77,63.38 0.04,42.16 -0.19,84.33 -0.15,126.49 -36.66,21.07 -73.36,42.07 -110.04,63.11 -36.6,-21.12 -73.16,-42.29 -109.77,-63.39 0.03,-42.17 0.1,-84.34 0.22,-126.51 m 83.75,164.99 c 8.72,5.32 17.5,10.53 26.19,15.91 8.67,-5.19 17.17,-10.67 25.77,-15.98 -17.32,-0.05 -34.64,0.09 -51.96,0.07 z"
+            inkscape:connector-curvature="0"
+            fill="#b99465" />
+        </a>
+<a xlink:href="#b">
+    <path
+    
+            id="path3320"
+            d="m 118.23,268.08 c 36.65,-21.06 73.33,-42.07 110,-63.09 36.58,21.14 73.15,42.3 109.75,63.4 -0.04,42.17 -0.14,84.34 -0.21,126.51 -36.64,21.07 -73.33,42.08 -110,63.1 -36.59,-21.14 -73.15,-42.29 -109.75,-63.4 0.04,-42.17 0.13,-84.35 0.21,-126.52 m 83.76,165 c 8.76,5.32 17.53,10.61 26.29,15.92 8.58,-5.3 17.12,-10.66 25.67,-15.99 -17.32,-0.05 -34.64,0.09 -51.96,0.07 z"
+            inkscape:connector-curvature="0"
+            fill="#b99465" />
+        </a>
+        <a xlink:href="#c">
+    <path
+            id="path3322"
+            d="M 351.23,268.09 C 387.88,247.02 424.56,226 461.24,205 c 36.58,21.14 73.14,42.29 109.74,63.39 -0.04,42.17 -0.13,84.35 -0.21,126.52 -36.65,21.06 -73.32,42.08 -110.01,63.09 -36.58,-21.14 -73.15,-42.29 -109.74,-63.41 0.05,-42.16 0.14,-84.33 0.21,-126.5 m 83.76,155.99 c 8.73,5.32 17.51,10.56 26.22,15.92 8.64,-5.23 17.15,-10.68 25.74,-15.99 -17.32,-0.05 -34.64,0.09 -51.96,0.07 z"
+            inkscape:connector-curvature="0"
+            fill="#b99465" />
+        </a>
+    <path
+            id="path3324"
+            d="m 319.99,229.08 c 17.32,0.02 34.64,-0.12 51.96,-0.07 -8.6,5.31 -17.1,10.79 -25.77,15.98 -8.69,-5.38 -17.47,-10.59 -26.19,-15.91 z"
+            inkscape:connector-curvature="0"
+            style="fill:#ffffff" />
+        <a xlink:href="#d">
+    <path
+            id="path3326"
+            d="m 2.18,472.08 c 36.68,-21.01 73.35,-42.06 110.04,-63.07 36.59,21.12 73.16,42.29 109.77,63.38 -0.04,42.17 -0.1,84.35 -0.23,126.53 -36.64,21.05 -73.32,42.02 -109.97,63.06 C 75.2,640.87 38.63,619.7 2.02,598.6 1.99,556.43 2.2,514.25 2.18,472.08 m 83.81,165 c 8.83,5.28 17.54,10.78 26.46,15.91 8.44,-5.43 17.01,-10.64 25.5,-15.98 -17.32,-0.05 -34.64,0.09 -51.96,0.07 z"
+            inkscape:connector-curvature="0"
+            fill="#b99465" />
+        </a>
+        <a xlink:href="#e">
+    <path
+            id="path3328"
+            d="m 236.25,472.06 c 36.65,-21.03 73.31,-42.04 109.97,-63.05 36.59,21.12 73.16,42.28 109.77,63.38 0.01,42.16 -0.19,84.32 -0.16,126.48 -36.66,21.08 -73.37,42.07 -110.04,63.12 -36.59,-21.14 -73.18,-42.29 -109.78,-63.41 0.05,-42.17 0.1,-84.35 0.24,-126.52 M 320,637.08 c 8.84,5.28 17.53,10.81 26.48,15.9 8.41,-5.44 17,-10.63 25.47,-15.97 -17.32,-0.06 -34.64,0.09 -51.95,0.07 z"
+            inkscape:connector-curvature="0"
+            fill="#b99465" />
+        </a>
+        <a xlink:href="#f">
+    <path
+            id="path3330"
+            d="m 469.24,472.06 c 36.65,-21.03 73.31,-42.05 109.97,-63.05 36.6,21.12 73.17,42.29 109.77,63.4 -0.06,42.16 -0.14,84.33 -0.21,126.5 -36.66,21.03 -73.33,42.05 -109.99,63.07 -36.6,-21.12 -73.17,-42.29 -109.76,-63.4 0.04,-42.17 0.09,-84.34 0.22,-126.52 M 553,637.08 c 8.8,5.3 17.53,10.73 26.41,15.92 8.47,-5.4 17.03,-10.65 25.54,-15.99 -17.32,-0.06 -34.63,0.09 -51.95,0.07 z"
+            inkscape:connector-curvature="0"
+            fill="#b99465" />
+        </a>
+    <path
+            id="path3332"
+            d="m 434.99,424.08 c 17.32,0.02 34.64,-0.12 51.96,-0.07 -8.59,5.31 -17.1,10.76 -25.74,15.99 -8.71,-5.36 -17.49,-10.6 -26.22,-15.92 z"
+            inkscape:connector-curvature="0"
+            style="fill:#ffffff" />
+    <path
+            id="path3334"
+            d="m 201.99,433.08 c 17.32,0.02 34.64,-0.12 51.96,-0.07 -8.55,5.33 -17.09,10.69 -25.67,15.99 -8.76,-5.31 -17.53,-10.6 -26.29,-15.92 z"
+            inkscape:connector-curvature="0"
+            style="fill:#ffffff" />
+    <path
+            id="path3336"
+            d="m 85.99,637.08 c 17.32,0.02 34.64,-0.12 51.96,-0.07 -8.49,5.34 -17.06,10.55 -25.5,15.98 -8.92,-5.13 -17.63,-10.63 -26.46,-15.91 z"
+            inkscape:connector-curvature="0"
+            style="fill:#ffffff" />
+    <path
+            id="path3338"
+            d="m 320,637.08 c 17.31,0.02 34.63,-0.13 51.95,-0.07 -8.47,5.34 -17.06,10.53 -25.47,15.97 -8.95,-5.09 -17.64,-10.62 -26.48,-15.9 z"
+            inkscape:connector-curvature="0"
+            style="fill:#ffffff" />
+    <path
+            id="path3340"
+            d="m 553,637.08 c 17.32,0.02 34.63,-0.13 51.95,-0.07 -8.51,5.34 -17.07,10.59 -25.54,15.99 -8.88,-5.19 -17.61,-10.62 -26.41,-15.92 z"
+            inkscape:connector-curvature="0"
+            style="fill:#ffffff" />
+</g>
+
+<g
+        id="g3378"
+        transform="matrix(1.0767622,0,0,1.0767622,383.44459,334.49877)">
+    <path
+            id="path3364"
+            d="m 53.97,0 2.19,0 c 3.65,0.78 5.93,5.03 4.1,8.4 -1.81,4.04 -8.2,4.2 -10.21,0.25 C 47.99,5.29 50.27,0.85 53.97,0 z"
+            inkscape:connector-curvature="0"
+            style="fill:#ffffff" />
+    <path
+            id="path3366"
+            d="m 41.84,11.67 c 2.1,-2.43 6.38,-2.48 8.41,0.05 3.01,3.76 5.9,7.63 8.9,11.41 3.62,-1.17 7.08,-2.84 10.81,-3.61 3.32,0.14 4.22,5.25 1.04,6.34 -4.57,1.49 -9.08,4.02 -13.86,4.38 -3.5,-2.11 -5.3,-6.3 -8.08,-9.26 -2.98,3.34 -5.95,6.69 -8.92,10.04 2.74,2.27 5.74,4.24 8.35,6.67 1.48,1.3 0.99,3.41 0.42,5.03 -1.56,4.64 -3.15,9.28 -4.69,13.92 1.44,1.5 3.7,2.94 3.24,5.36 -0.36,3.01 -4.44,4.3 -6.49,2.09 -2.23,-2.03 -6.12,-4.26 -4.67,-7.85 1.58,-4.97 3.35,-9.89 4.98,-14.85 C 37.54,38.85 33.67,36.5 30,33.86 27.34,31.98 27.19,27.77 29.42,25.49 33.53,20.86 37.64,16.21 41.84,11.67 z"
+            inkscape:connector-curvature="0"
+            style="fill:#ffffff" />
+    <path
+            id="path3368"
+            d="M 0,48.59 C 0.5,39.95 8.29,32.58 16.96,32.72 25.86,32.4 34.01,40.09 34.23,48.98 34.94,57.96 27.48,66.4 18.52,67 l -2.68,0 C 7.63,66.5 0.61,59.5 0,51.31 L 0,48.59 M 14.2,37.18 c -6.5,1.38 -11.17,8.28 -9.91,14.83 0.98,6.78 7.98,11.94 14.76,10.73 6.89,-0.89 12.17,-8 10.91,-14.86 C 29.02,40.67 21.28,35.33 14.2,37.18 z"
+            inkscape:connector-curvature="0"
+            style="fill:#ffffff" />
+    <path
+            id="path3370"
+            d="M 51.77,49.01 C 51.97,40.1 60.14,32.4 69.05,32.72 77.69,32.58 85.43,39.9 86,48.49 l 0,2.67 C 85.5,59.36 78.5,66.39 70.32,67 l -2.7,0 C 58.61,66.5 51.07,58.03 51.77,49.01 M 64.41,37.65 c -6.23,2.17 -10.02,9.49 -8.02,15.82 1.74,6.48 8.98,10.79 15.5,9.06 C 78.85,61.04 83.55,53.2 81.4,46.36 79.6,39.28 71.23,34.9 64.41,37.65 z"
+            inkscape:connector-curvature="0"
+            style="fill:#ffffff" />
+</g>
+<path
+        id="path3386"
+        d="m 563.57318,596.97282 16.43275,0 c 0.0105,1.75953 -0.0209,3.51906 0.0209,5.27859 4.00083,0.0628 8.00167,-0.0209 12.01298,0.0314 3.04776,7.95978 5.94889,15.9824 8.9757,23.95265 3.86468,-0.36657 7.75031,2.09468 8.57771,5.9803 l 0,10.18014 c -0.52367,3.87516 -4.28362,6.50398 -8.07499,6.31546 0.70172,3.79137 -0.94261,8.19019 -5.09007,9.00711 l -2.29367,0 c -4.33599,-0.61793 -6.04315,-5.21574 -5.38333,-9.08043 -10.5467,-0.0209 -21.08293,-0.0209 -31.62964,-0.0105 0.64935,3.85421 -1.01592,8.38919 -5.29954,9.0909 l -2.14704,0 c -4.29409,-0.59698 -6.05362,-5.16338 -5.32048,-9.00711 -3.73901,0.18852 -7.37327,-2.34604 -8.07499,-6.10599 l 0,-10.16966 c 0.50272,-3.17344 3.19438,-5.54043 6.27356,-6.12694 3.04776,-7.97025 5.99078,-15.99287 8.9757,-23.98407 4.01131,-0.14662 8.02262,0.0105 12.02345,-0.0733 0.0419,-1.75953 0.0105,-3.51906 0.0209,-5.27859 m -10.36866,7.5199 c -2.64977,6.94385 -5.22622,13.90866 -7.81315,20.87347 17.60577,0.0209 35.21155,0.0209 52.81732,0 -2.54504,-6.96481 -5.17386,-13.8982 -7.76079,-20.85253 -12.41097,-0.0419 -24.83241,0.0105 -37.24338,-0.0209 M 542.7416,629.8069 c -3.84373,0.99498 -5.3519,6.44114 -2.30414,9.12233 2.71261,2.93255 8.1483,1.73858 9.39463,-2.05279 1.69669,-4.14746 -3.00586,-8.63007 -7.09049,-7.06954 m 55.88602,0.46083 c -3.30959,1.60243 -3.8961,6.59824 -1.00544,8.89191 3.10012,3.00587 9.08043,0.92166 9.4051,-3.45622 0.73314,-4.35693 -4.7235,-7.77125 -8.39966,-5.43569 z"
+        inkscape:connector-curvature="0"
+        style="fill:#ffffff" />
+<g
+        id="g3409"
+        transform="matrix(1.0537475,0,0,1.0537475,236.6001,600.60385)">
+    <path
+            id="path3397"
+            d="m 42.22,0 4.09,0 c 10.59,0.47 20.31,7.52 24.3,17.29 6.64,2.43 10.66,9.06 11.76,15.8 1.09,0.28 1.97,0.9 2.63,1.83 l 0,4.22 c -0.89,0.89 -1.77,1.77 -2.59,2.72 -1.82,0.05 -3.64,0 -5.46,0.05 3.44,-6.43 -1.9,-14.56 -8.98,-14.71 -7.58,-0.97 -14.45,7.69 -10.54,14.68 -8.94,-0.01 -17.88,0 -26.82,0 C 34.54,34.85 27.57,26.11 19.93,27.22 12.94,27.45 7.66,35.53 11.11,41.89 7.41,41.87 3.7,41.88 0,41.88 L 0,38.43 C 0.47,32.84 1.72,26.89 5.67,22.66 8.38,19.65 12.49,18.29 16.46,18.27 20.94,8.1 31.13,0.84 42.22,0 M 22.8,20.11 c 6.42,0.02 12.83,0.02 19.25,0 0.02,-4.8 0.02,-9.6 0,-14.4 -8.16,0.61 -18.28,5.32 -19.25,14.4 M 46.89,5.81 c -0.02,4.76 -0.02,9.53 0,14.3 5.99,0.01 11.98,0.03 17.97,-0.01 C 63.53,11.69 54.73,6.71 46.89,5.81 z"
+            inkscape:connector-curvature="0"
+            style="fill:#ffffff" />
+    <path
+            id="path3399"
+            d="m 12.56,33.49 c 3.17,-6.44 13.69,-6.36 16.72,0.17 2.83,5.23 -1.43,11.75 -7.08,12.34 l -2.32,0 C 13.99,45.69 9.52,38.82 12.56,33.49 m 5.76,0.86 c -2.13,1.47 -1.67,5.09 0.78,5.98 2.19,1.08 5.14,-0.87 4.9,-3.32 0.08,-2.73 -3.59,-4.44 -5.68,-2.66 z"
+            inkscape:connector-curvature="0"
+            style="fill:#ffffff" />
+    <path
+            id="path3401"
+            d="m 58.75,33.68 c 3,-6.55 13.58,-6.65 16.73,-0.19 3.01,5.27 -1.33,12.06 -7.13,12.51 l -2.39,0 C 60.25,45.51 55.94,38.94 58.75,33.68 m 6.51,0.53 c -2.09,1.2 -2.14,4.56 -0.04,5.79 2.21,1.69 5.69,-0.27 5.54,-3 -0.05,-2.61 -3.34,-4.36 -5.5,-2.79 z"
+            inkscape:connector-curvature="0"
+            style="fill:#ffffff" />
+</g>
+<path
+        id="path3416"
+        d="m 113.65597,837.63314 43.61207,0 c 1.09366,1.20715 2.22858,2.37302 3.49764,3.38414 l 0,50.65892 c -0.57778,2.60001 -3.02303,3.68335 -5.38574,4.15795 0.33016,3.43573 -0.0103,7.78972 -4.01351,8.86274 l -2.20794,0 c -4.3643,-0.81509 -4.59129,-5.62304 -4.28176,-9.16194 -6.26272,0.0103 -12.51513,0.0103 -18.77785,0 0.29921,3.51826 0.10317,8.13019 -4.08573,9.16194 l -2.22858,0 c -4.14764,-0.89763 -4.52938,-5.39606 -4.18891,-8.86274 -2.33175,-0.44365 -4.57065,-1.51667 -5.38573,-3.90001 l 0,-50.86527 c 1.22778,-1.05239 2.40398,-2.18731 3.44604,-3.43573 m 10.27623,2.4762 c -1.5373,1.31032 -0.37143,4.07541 1.6508,3.83811 6.58257,0.12381 13.18577,0.11349 19.77865,0 2.50715,0.34048 3.31192,-3.58017 0.8873,-4.27145 -5.79843,-0.42301 -11.63813,-0.0206 -17.4572,-0.19603 -1.59922,0.16508 -3.44605,-0.33016 -4.85955,0.62937 m -11.64845,8.75956 c -0.0206,6.2524 -0.031,12.51512 0,18.76753 -0.19604,1.66112 1.36191,3.16747 3.00239,2.98176 6.30399,0.10317 12.60798,-0.0103 18.91198,0.0309 0,-8.35718 0,-16.72467 0,-25.08184 -6.304,0.0516 -12.60799,-0.0825 -18.91198,0.0413 -1.79525,-0.20635 -3.28097,1.51667 -3.00239,3.26033 m 24.49374,-3.3016 c 0,8.35717 0,16.72466 0,25.08184 6.30399,-0.0413 12.60798,0.0619 18.91198,-0.0309 1.60953,0.18571 3.16747,-1.28969 2.99207,-2.91986 0.0516,-6.27304 0.0206,-12.54608 0.0103,-18.81912 0.27857,-1.73334 -1.18651,-3.47699 -2.99208,-3.27064 -6.30399,-0.13413 -12.60798,0.0103 -18.92229,-0.0413 m -21.02706,31.65408 c -3.02303,1.53731 -3.43573,6.18019 -0.68096,8.18178 2.96112,2.63096 8.254,0.44365 8.40876,-3.51827 0.4127,-3.90001 -4.44684,-6.76828 -7.7278,-4.66351 m 34.84219,-0.26825 c -3.03334,1.12461 -4.15795,5.40637 -1.89842,7.78971 2.39366,3.08493 7.89289,1.97064 8.89369,-1.80556 1.35159,-3.94129 -3.33256,-7.80003 -6.99527,-5.98415 z"
+        inkscape:connector-curvature="0"
+        style="fill:#ffffff" />
+<path
+        id="path3416-2"
+        d="m 408.47496,839.50212 44.45075,0 c 1.11468,1.23036 2.27143,2.41866 3.56489,3.44922 l 0,51.63311 c -0.58889,2.65001 -3.08116,3.75418 -5.4893,4.23791 0.33651,3.5018 -0.0105,7.93951 -4.09069,9.03316 l -2.25041,0 c -4.44823,-0.83075 -4.67958,-5.73117 -4.3641,-9.33812 -6.38315,0.0105 -12.75579,0.0105 -19.13895,0 0.30496,3.58592 0.10516,8.28653 -4.1643,9.33812 l -2.27144,0 c -4.22739,-0.91488 -4.61648,-5.49982 -4.26946,-9.03316 -2.37659,-0.45218 -4.65854,-1.54584 -5.4893,-3.97501 l 0,-51.84343 c 1.25139,-1.07263 2.45021,-2.22938 3.51231,-3.5018 m 10.47385,2.52382 c -1.56687,1.33552 -0.37857,4.15378 1.68254,3.91192 6.70915,0.12619 13.43933,0.11567 20.159,0 2.55537,0.34702 3.37561,-3.64902 0.90437,-4.35359 -5.90994,-0.43115 -11.86195,-0.021 -17.79292,-0.1998 -1.62996,0.16825 -3.51231,-0.33651 -4.95299,0.64147 m -11.87246,8.928 c -0.021,6.37264 -0.0315,12.7558 0,19.12844 -0.1998,1.69306 1.3881,3.22839 3.06013,3.0391 6.42522,0.10516 12.85044,-0.0105 19.27566,0.0315 0,-8.51789 0,-17.04629 0,-25.56418 -6.42522,0.0526 -12.85044,-0.0841 -19.27566,0.0421 -1.82977,-0.21032 -3.34406,1.54584 -3.06013,3.32302 m 24.96476,-3.36509 c 0,8.51789 0,17.04629 0,25.56418 6.42522,-0.0421 12.85044,0.0631 19.27566,-0.0315 1.64049,0.18929 3.22839,-1.31449 3.04962,-2.976 0.0526,-6.39368 0.021,-12.78735 0.0105,-19.18102 0.28393,-1.76667 -1.20933,-3.54386 -3.04961,-3.33354 -6.42522,-0.13671 -12.85044,0.0105 -19.28618,-0.0421 m -21.43142,32.26281 c -3.08116,1.56687 -3.50179,6.29903 -0.69405,8.33912 3.01807,2.68155 8.41273,0.45218 8.57047,-3.58593 0.42063,-3.97501 -4.53236,-6.89843 -7.87642,-4.75319 m 35.51223,-0.27341 c -3.09168,1.14623 -4.23792,5.51033 -1.93493,7.93951 2.43969,3.14425 8.04467,2.00854 9.06471,-1.84029 1.37759,-4.01707 -3.39664,-7.95002 -7.12978,-6.09922 z"
+        inkscape:connector-curvature="0"
+        style="fill:#ffffff" />
+<g
+        id="g3409-7"
+        transform="matrix(1.0831029,0,0,1.0831029,672.63604,844.66678)">
+    <path
+            id="path3397-7"
+            d="m 42.22,0 4.09,0 c 10.59,0.47 20.31,7.52 24.3,17.29 6.64,2.43 10.66,9.06 11.76,15.8 1.09,0.28 1.97,0.9 2.63,1.83 l 0,4.22 c -0.89,0.89 -1.77,1.77 -2.59,2.72 -1.82,0.05 -3.64,0 -5.46,0.05 3.44,-6.43 -1.9,-14.56 -8.98,-14.71 -7.58,-0.97 -14.45,7.69 -10.54,14.68 -8.94,-0.01 -17.88,0 -26.82,0 C 34.54,34.85 27.57,26.11 19.93,27.22 12.94,27.45 7.66,35.53 11.11,41.89 7.41,41.87 3.7,41.88 0,41.88 L 0,38.43 C 0.47,32.84 1.72,26.89 5.67,22.66 8.38,19.65 12.49,18.29 16.46,18.27 20.94,8.1 31.13,0.84 42.22,0 M 22.8,20.11 c 6.42,0.02 12.83,0.02 19.25,0 0.02,-4.8 0.02,-9.6 0,-14.4 -8.16,0.61 -18.28,5.32 -19.25,14.4 M 46.89,5.81 c -0.02,4.76 -0.02,9.53 0,14.3 5.99,0.01 11.98,0.03 17.97,-0.01 C 63.53,11.69 54.73,6.71 46.89,5.81 z"
+            inkscape:connector-curvature="0"
+            style="fill:#ffffff" />
+    <path
+            id="path3399-9"
+            d="m 12.56,33.49 c 3.17,-6.44 13.69,-6.36 16.72,0.17 2.83,5.23 -1.43,11.75 -7.08,12.34 l -2.32,0 C 13.99,45.69 9.52,38.82 12.56,33.49 m 5.76,0.86 c -2.13,1.47 -1.67,5.09 0.78,5.98 2.19,1.08 5.14,-0.87 4.9,-3.32 0.08,-2.73 -3.59,-4.44 -5.68,-2.66 z"
+            inkscape:connector-curvature="0"
+            style="fill:#ffffff" />
+    <path
+            id="path3401-3"
+            d="m 58.75,33.68 c 3,-6.55 13.58,-6.65 16.73,-0.19 3.01,5.27 -1.33,12.06 -7.13,12.51 l -2.39,0 C 60.25,45.51 55.94,38.94 58.75,33.68 m 6.51,0.53 c -2.09,1.2 -2.14,4.56 -0.04,5.79 2.21,1.69 5.69,-0.27 5.54,-3 -0.05,-2.61 -3.34,-4.36 -5.5,-2.79 z"
+            inkscape:connector-curvature="0"
+            style="fill:#ffffff" />
+</g>
+<text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="391.79446"
+       y="455.24982"
+       id="text3470"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3472"
+         x="391.79446"
+         y="455.24982"
+         style="font-size:28px;font-style:normal;font-weight:bold;-inkscape-font-specification:Sans Bold">骑单车</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="253.71016"
+       y="702.38092"
+       id="text3470-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3472-9"
+         x="253.71016"
+         y="702.38092"
+         style="font-size:28px;font-style:normal;font-weight:bold;-inkscape-font-specification:Sans Bold">租车</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="529.3042"
+       y="702.38092"
+       id="text3470-8"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3472-6"
+         x="529.3042"
+         y="702.38092"
+         style="font-size:28px;font-style:normal;font-weight:bold;-inkscape-font-specification:Sans Bold">出租车</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="93.399292"
+       y="962.89209"
+       id="text3470-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3472-0"
+         x="93.399292"
+         y="962.89209"
+         style="font-size:28px;font-style:normal;font-weight:bold;-inkscape-font-specification:Sans Bold">搭公交</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="402.60028"
+       y="965.47144"
+       id="text3470-2"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3472-8"
+         x="402.60028"
+         y="965.47144"
+         style="font-size:28px;font-style:normal;font-weight:bold;-inkscape-font-specification:Sans Bold">大巴</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+       x="664.90472"
+       y="962.89209"
+       id="text3470-6"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3472-02"
+         x="664.90472"
+         y="962.89209"
+         style="font-size:28px;font-style:normal;font-weight:bold;-inkscape-font-specification:Sans Bold">自驾营地</tspan></text>
+</g>
+</svg>
+</div>
+</div>
+		</div>
+	</div>
+	
+	<div class="footer">
+    <div class="line-1">
+        <ul class="footer-nav">
+            <li>
+                <ul class="footer-list">
+                    <li><a href="#" class="name">品味雅安</a></li>
+                    <li><a href="#">秘密雅安</a></li>
+                    <li><a href="#">地方文化</a></li>
+                    <li><a href="#">历史名人</a></li>
+                    <li><a href="#">史说雅安</a></li>
+                    <li><a href="#">民俗风情</a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="footer-list">
+                    <li><a href="#" class="name">体验雅安</a></li>
+                    <li><a href="#">美食</a></li>
+                    <li><a href="#">娱乐</a></li>
+                    <li><a href="#">购物</a></li>
+                    <li><a href="#">住宿</a></li>
+                    <li><a href="#">交通</a></li>
+                    <li><a href="#">景点</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="footer-list">
+                    <li><a href="#" class="name emptybgimg">旅行印记</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="footer-list">
+                    <li><a href="#" class="name">活动盛世</a></li>
+                    <li><a href="#">当月热点</a></li>
+                    <li><a href="#">热点回顾</a></li>
+                    <li><a href="#">活动日历</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="footer-list">
+                    <li><a href="#" class="name">出游助手</a></li>
+                    <li><a href="#">旅游工具</a></li>
+                    <li><a href="#">旅游资询</a></li>
+                    <li><a href="#">旅游指南</a></li>
+                    <li><a href="#">电子杂志</a></li>
+                    <li><a href="#">其他</a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="footer-list">
+                    <li><a href="#" class="name">西环线</a></li>
+                    <li><a href="#">最潮自驾</a></li>
+                    <li><a href="#">心享骑迹</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="footer-list">
+                    <li><a href="#" class="name emptybgimg">雅安汇</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+    <div class="line-2">
+        <p class="site-info"><a href="#">网站介绍</a>|<a href="#">网站地图</a>|<a href="#">联系我们</a>|<a href="#">免责声明</a> |<a href="#">隐私保护</a>|<a href="#">客户服务</a></p>
+        <p class="copyright">@2015 雅安市旅游局 雅安市云游科技 版权所有 蜀ICP 备05017009号</p>
+        <div class="bdsharebuttonbox" style="padding-left: 20px;">
+            <a href="#" class="bds_more" data-cmd="more"></a>
+            <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博" style="background-color: #fff;border-radius: 2px;"></a>
+            <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博" style="background-color: #fff;border-radius: 2px;"></a>
+            <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间" style="background-color: #fff;border-radius: 2px;"></a>
+        </div>
+        <img class="cyya" src="images/cyya.jpg"/>
+        <img class="yaapp"src="images/cyya.jpg"/>
+        <img class="yatxwb"src="images/txwb.png"/>
+        <p class="hot-call-1">96927</p>
+        <p class="hot-call-2">畅游雅安微信&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;畅游雅安APP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;旅游投诉热线</p>
+        <div class="clear"></div>
+    </div>
+</div>
+	
+
+
+	<script type="text/javascript">
+		$(window).load(function() {
+	$('.flexslider').flexslider({
+		directionNav: false,
+		pauseOnAction: false
+	});
+});
+	</script>
+</body>
+</html>

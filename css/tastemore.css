@@ -1,0 +1,103 @@
+.headimg{
+	position: relative;
+	text-align: center;
+	margin-top: 91px;
+	width: 100%;
+	height: 400px;
+	background: url(../images/taste/banner.jpg) center center no-repeat;
+}
+.headimg .navbg{
+	width: 100%;
+	height: 40px;
+	background-color: rgba(78,147,66,.8);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.smallnavCon{
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	/*background: rgb(100,10,0);*/
+}
+.smallnav{
+	
+	width: 1012px;
+	margin: 0 auto;
+	color: rgb(255,255,255);
+	text-align: left;
+}
+.smallnav > a,.smallnav > span{
+	line-height: 40px;
+}
+.content{
+	width: 1012px;
+	margin: 20px auto;
+	display: block;
+	color: rgb(128,128,128);
+}
+.sum{
+	width: 1012px;
+	
+	margin: 20px auto;
+	margin-top: 40px;
+}
+.sum .sumtitle{
+	text-align: center;
+	margin: 20px auto;
+	font-size: 1.2em;
+	color: #5d5d5d;
+
+}
+.sum .sumdesc{
+	text-indent: 2em;
+	line-height: 1.5em;
+	/*letter-spacing: 3px;*/
+}
+.list ul{
+		margin-top: 4em;
+}
+.list ul li{
+	padding-left: 340px;
+	/*margin-left: 20px;*/
+	height: 200px;
+	width: 100%;
+	position: relative;
+	margin-bottom: 2em;
+
+}
+.list ul li > div{
+	width: 672px;
+	height: 200px;
+	position: relative;
+}
+.list ul li > img{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.list ul li div > a{
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	display: block;
+}
+.itemtitle{
+	font-size: 1.1em;
+	margin-bottom: .2em;
+	margin-top: .5em;
+	color: rgb(146,182,112);
+
+}
+.dsc{
+	text-indent: 2em;
+	line-height: 1.6em;
+	
+}
+
+
+
+
+
+

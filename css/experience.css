@@ -1,0 +1,110 @@
+body{
+	background-color: rgb(242,240,241);
+}
+
+.headimg{
+	position: relative;
+	text-align: center;
+	margin-top: 91px;
+	width: 100%;
+	height: 400px;
+	background: url(../images/taste/banner.jpg) center center no-repeat;
+}
+.headimg .navbg{
+	width: 100%;
+	height: 40px;
+	background-color: rgba(78,147,66,.8);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.smallnavCon{
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	/*background: rgb(100,10,0);*/
+}
+.smallnav{
+	
+	width: 1012px;
+	margin: 0 auto;
+	color: rgb(255,255,255);
+	text-align: left;
+}
+.smallnav > a,.smallnav > span{
+	line-height: 40px;
+}
+
+.excontent,.lbcontent{
+	width: 1012px;
+	font-size: 1em;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.lbheadcontent{
+	/*padding-left: 458px;*/
+	position: relative;
+	width: 100%;
+	height: 320px;
+	background-color: #fff;
+}
+.lbheadcontent > .sumcontain{
+	position: absolute;
+	left: 458px;
+	top: 0;
+	margin: 0 15px;
+}
+.lbheadcontent .sumcontain .sumtitle{
+	margin: 15px auto;
+	text-align: center;
+	font-size: 1.2em;
+	color: rgb(78,147,66);
+}
+.lbheadcontent .sumcontain .sumdesc{
+	text-indent: 2em;
+	line-height: 1.3em;
+}
+/*.lbheadcontent .sumcontain > */
+
+.lbheadcontent .sumcontain .spots{
+	/*float: left;*/
+	margin: 0 auto;
+	margin-top: 15px;
+	/*overflow: hidden;*/
+
+}
+
+
+.lbheadcontent .sumcontain .spots > a{
+	margin: 8px 0 0 0;
+	text-decoration: none;
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+	color: rgb(0,0,0);
+}
+.searchmore{
+	display: block;
+	background-image: url(../images/experience/search_more.png);
+	width: 97px;
+	height: 25px;
+	margin-top: 20px;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+
+}
+.lbcontent .tabs{
+	text-align: center;
+}
+.lbcontent .tabs > li{
+	/*float: left;*/
+	display: inline-block;
+	margin: 20px 25px;
+}
+
+
+
+

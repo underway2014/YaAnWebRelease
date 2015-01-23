@@ -1,0 +1,74 @@
+
+/*推荐,概述,名菜,食街*/
+
+
+/*推荐*/
+.shoprecomend .flexslider{margin-left: 24px;}
+.shoprecomend .flexslider { position: relative; overflow: hidden; width: 964px; background: url(../images/loading.gif) 50% no-repeat;}
+.shoprecomend .slides { position: relative; z-index: 1;}
+.shoprecomend .slides li { height: 100%;}
+.shoprecomend .flex-control-nav { position: absolute; bottom: 0px; z-index: 2; width: 100%; text-align: center;}
+.shoprecomend .flex-control-nav li { display: inline-block; width: 14px; height: 14px; margin: 0 5px; *display: inline; zoom: 1;}
+.shoprecomend .flex-control-nav a { display: inline-block; width: 14px; height: 14px; line-height: 40px; overflow: hidden; background: url(../images/dot.png) right 0 no-repeat; cursor: pointer;}
+.shoprecomend .flex-control-nav .flex-active { background-position: 0 0;}
+.shoprecomend .flexslider .slides img{width: 100%;}
+
+
+/* 购物分类 */
+.shopfl{
+	padding-left: 24px;
+}
+.shopfl .flitem{
+	/*position: relative;*/
+	/*float: left;*/
+	overflow: hidden;
+	margin: 20px auto;
+
+}
+.flitem .flitemdesc{
+	width: 535px;
+	
+}
+.flitem .flitemdesc > p{
+	text-indent: 2em;
+}
+.atright{
+	margin-left: 15px;
+}
+.atleft{
+	margin-right: 15px;
+}
+.shopfl .flitem > img,.shopfl .flitem > .flitemdesc{
+	float: left;
+}
+
+.fltitlecontain{
+	position: relative;
+	margin-bottom: 10px;
+}
+.fltitlecontain p{
+	color: rgb(146,182,112);
+}
+.fltitlecontain > a{
+	position: absolute;
+	right: 10px;
+	top: 5px;
+	text-decoration: none;
+	color: rgb(146,182,112);
+}
+.shopfl .flsmalltitle{
+	
+	font-size: 1.2em;
+	font-weight: 400;
+
+}
+
+.flitem .flitemdesc .fltcname > a{
+	margin: 8px 0 0 0;
+	text-decoration: none;
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+	color: rgb(0,0,0);
+}
+

@@ -1,0 +1,49 @@
+* { padding :0; margin :0; border: none;outline: none;}
+.clear { clear: both; height: 30px;}
+body { width: 100%; margin: 0;font-family:Microsoft Yahei; }
+ul ,li { margin: 0; padding: 0; list-style-type: none; outline: none;overflow: hidden; }
+a { list-style-type: none; text-decoration: none;color: white;overflow: hidden; }
+.header{width: 100%;min-width: 1012px;position: fixed;top: 0;left: 0;z-index: 99;}
+.header .row-1{width:1012px;background-color: #424242;padding: 0 214px;position: relative;}
+.header .logo{width: 100px;position:absolute;top:0;left:214px;z-index: 1001;}
+.header .navigation-1{color: #bdbdbd;height: 40px;width: 1012px;}
+.header .navigation-1 li{float: left;margin-right:1em;line-height: 40px;}
+.header .navigation-1 .name{font-size: 22px;text-align: left;font-family: "\4EFF\5B8B";padding-right: 350px;text-indent: 1em;padding-left: 100px; }
+.header .navigation-1 .weather-img{width: 20px;}
+.header .navigation-1 .weather-info{font-size: 12px;}
+.header .navigation-1 .weather-more{font-size: 12px;padding: 0 0 0 10px;height: 40px;color: #bdbdbd;}
+.header .row-2{width: 1012px;background-color: #f5f5f5;padding: 0 214px;border-bottom: 1px solid #ccc;}
+.header .navigation-2{height: 50px;width: 1012px;}
+.header .navigation-2 li{float: left;line-height: 50px;}
+.header .navigation-2 .home{padding-left: 80px;}
+.header .navigation-2 .nav{width: 74px;color: #505050;text-align: center; font-size: 14px;font-weight: bold;padding-right: 32px;padding-left:10px;background: url("../images/arrow-down.png") no-repeat 86px  22px;background-size: 10px auto;}
+.header .navigation-2 #lxyj .nav,.header .navigation-2 #yah .nav{background: url("../images/arrow-empty.png") no-repeat 86px  22px;background-size: 10px auto;}
+.header .navigation-2 li a:hover .nav{color: #fff;background-color: #7b7b7b !important;}
+.header .row-3{width: 1012px;height:400px;background-color: #000;padding: 0 214px;display: none;position: absolute;top: 90px;left: 0;z-index: 1000;}
+.header .row-3 .menu-content{width: 1012px;padding-top: 60px;}
+.header .row-3 .menu-content >li{float: left;padding: 0 20px;}
+.header .row-3 .menu-list li{max-width: 230px;overflow: hidden;height: 20px;line-height: 20px; font-size: 14px;padding:5px 0  0 16px;text-align: left;
+    background: url("../images/menu-line.png") repeat-y left top;background-size: 2px auto;}
+.header .row-3 .menu-list li .name{color: #00d458;}
+.header .row-3 .menu-list li a:hover{color: #9cc716;}
+
+.content{width: 100%;height: auto;background-color: #fff;margin: 0 auto;min-width: 1012px;position: relative;}
+
+
+.footer{width: 100%;min-width: 1012px;}
+.footer .line-1{width:1012px;background-color: #3d3d3d;padding: 0 214px;position: relative;}
+.footer .line-1 .footer-nav{width: 1012px;padding-top: 30px;padding-bottom: 20px;}
+.footer .line-1 .footer-nav >li{float: left;}
+.footer .line-1 .footer-list li{max-width: 120px;overflow: hidden;height: 20px;line-height: 20px; font-size: 14px;width:100px;text-align: left; padding: 0.5em 0 0 10px;margin-left: 2em;}
+.footer .line-1 .footer-list li a:hover{color: #9cc716;}
+.footer .line-1 .footer-list .name{font-weight: bold;font-size: 14px;letter-spacing: 1px;background: url("../images/arrow-down.png") no-repeat right center;background-size: 10px auto;padding-right: 32px;}
+.footer .line-2{width:1012px;background-color: #3d3d3d;padding: 0 214px;position: relative;}
+.footer .line-2 .hot-call-1{color: #fff;width: auto;text-align: left;font-size: 24px;height: 30px;line-height: 30px;padding-bottom: 10px;position: absolute;left: 70%;top: 40%;}
+.footer .line-2 .hot-call-2{color: #fff;width: auto;text-align: left;font-size: 12px;height: 24px;line-height: 24px;padding-bottom: 10px;position: absolute;left: 55.5%;top: 65%;}
+.footer .line-2 .site-info{width: 100%;text-align: left;font-size: 12px;height: 20px;line-height: 20px;color: #aeaeae;padding: 10px 0;letter-spacing: 4px;text-indent: 2em;}
+.footer .line-2 .copyright{width: 100%;text-align: left;font-size: 10px;height: 20px;line-height: 20px;color: #aeaeae;padding:0 0 30px 0;letter-spacing: 2px;text-indent: 2em;}
+.footer .line-2 .cyya{position: absolute;left: 55%;top:0;}
+.footer .line-2 .yaapp{position: absolute;left: 62%;top:0;}
+.footer .line-2 .yatxwb{position: absolute;left: 69%;top:0;}
+.footer .line-2 a:hover{border-bottom: 1px solid #fff;}
+.emptybgimg{background: url("../images/arrow-empty.png") no-repeat 86px  22px !important;background-size: 10px auto;}

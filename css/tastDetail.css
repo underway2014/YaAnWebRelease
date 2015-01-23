@@ -1,0 +1,256 @@
+.headimg{
+	position: relative;
+	text-align: center;
+	margin-top: 91px;
+	width: 100%;
+	height: 400px;
+	background: url(../images/taste/banner.jpg) center center no-repeat;
+}
+.headimg .navbg{
+	width: 100%;
+	height: 40px;
+	background-color: rgba(78,147,66,.8);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.smallnavCon{
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	/*background: rgb(100,10,0);*/
+}
+.smallnav{
+	
+	width: 1012px;
+	margin: 0 auto;
+	color: rgb(255,255,255);
+	text-align: left;
+}
+.smallnav > a,.smallnav > span{
+	line-height: 40px;
+}
+
+
+.tcontent{
+	width: 1012px;
+	margin: 2em auto;
+	margin-top: 91px;
+
+	border: solid rgb(200,200,200) 1px;
+
+	border-top-width: 2px;
+	border-top-color: rgb(146,182,112);
+	/*padding-top: 20px;*/
+	position: relative;
+	padding-top: 15px;
+}
+
+.ldiv{
+	width: 720px;
+	border-right: solid rgb(200,200,200) 1px;
+	display: inline-block;
+}
+.lhead{
+	border-bottom: dotted rgb(200,200,200) 1px;
+	padding-bottom: 5px;
+
+}
+.ldiv .foodname{
+	font-size: 1.4em;
+	font-weight: 600;
+}
+
+.leftdetail{
+	margin: 20px;
+	display: block;
+	/*width: 680px;*/
+	/*background-color: rgb(100,100,0);*/
+}
+.leftdetail > div > span{
+	/*line-height: 24px;*/
+}
+.share{
+	float: right;
+}
+.share span{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	margin-left: 8px;
+}
+.qqkj{
+	background: url(../images/taste/detail/qqkj.png) no-repeat;
+}
+.sina{
+	background: url(../images/taste/detail/xl.png) no-repeat;
+}
+.tx{
+	background: url(../images/taste/detail/tx.png) no-repeat;
+}
+
+/*特产内页*/
+.slabel{
+	margin-top: 20px;
+}
+.slabel > span{
+	display: inline-block;
+	background-color: rgb(230,230,230);
+	font-size: .8em;
+	color: rgb(255,255,255);
+	margin-left: 15px;
+	padding: 3px 5px;
+
+}
+.slabel > a{
+	color: rgb(230,230,230);
+	font-size: .8em;
+}
+span.currenttype{
+	background-color: rgb(146,182,112);
+}
+
+/**/
+
+.showImg{
+	width: 680px;
+	height: 320px;
+	margin: 20px auto;
+	display: block;
+}
+.detaildsc{
+	/*margin:20px;*/
+	line-height: 1.5em;
+	text-indent: 2em;
+}
+.usecoment{
+	color: rgb(146,182,112);
+	font-size: 1.2em;
+	font-weight: 500;
+	margin-top: 50px;
+}
+textarea.comment{
+	width: 680px;
+	/*margin-left: 20px;*/
+	margin-top: 20px;
+	height: 100px;
+	background-color: rgb(240,240,240);
+	color: #000;
+	font-size: 1.1em;
+	border: solid rgb(230,230,230) 1px;
+}
+.info{
+	height: 30px;
+}
+.info span,.info input{
+	line-height: 30px;
+	height: 30px;
+	display: inline-block;
+}
+.submit{
+	display: inline-block;
+	width: 98px;
+	height: 28px;
+	background: url(../images/taste/detail/submit.png) no-repeat;
+	line-height: 30px;
+	/*margin-top: 10px;*/
+	position: relative;
+	top: 2px;
+	float: right;
+}
+input.userinfo{
+	background-color: rgb(240,240,240);
+	height: 30px;
+	margin-right: 2em;
+
+}
+.allcomment{
+	font-size: 1.2em;
+	margin-top: 40px;
+}
+
+
+ul.commentlist li{
+	position: relative;
+	padding: 10px 0;
+
+	padding-left: 110px;
+	min-height: 120px;
+	border-bottom: dotted rgb(200,200,200) 1px;
+
+}
+ul.commentlist li .listr{
+	width: 570px;
+}
+ul.commentlist li .listr .time{
+	font-size: .8em;
+}
+ul.commentlist li .listr > div{
+	margin-bottom: 10px;
+	line-height: 1.5em;
+}
+ul.commentlist li .listl{
+	position: absolute;
+	top: 22px;
+	left: 12px;
+}
+ul.commentlist li .listl >p{
+	margin-top: 10px;
+	width: 75px;
+	text-align: center;
+	font-size: .8em;
+}
+
+.rdiv{
+	width: 252px;
+	margin-right: 20px;
+	/*display: inline-block;*/
+	position: absolute;
+	top: 15px;
+	right: 0;
+}
+.otherfood{
+	color: rgb(146,182,112);
+	font-size: 1.2em;
+	font-weight: 500;
+}
+.rdiv ul li{
+	position: relative;
+	border-bottom: solid rgb(200,200,200) 1px;
+	padding: 15px 0;
+	padding-left: 100px;
+
+}
+.shopdsc{
+	width: 152px;
+	/*float: right;*/
+	/*display: inline-block;*/
+}
+.shopname{
+	font-size: 1.1em;
+	color: rgb(146,182,112);
+}
+.rdiv ul li img{
+	position: absolute;
+	left: 12px;
+	top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

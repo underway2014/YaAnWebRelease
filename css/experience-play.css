@@ -1,0 +1,80 @@
+.flplay{
+	padding-left: 24px;
+}
+.flplay .flplaycell{
+	display: inline-block;
+	margin-right: 8px;
+}
+.flplaycell{
+	position: relative;
+	display: inline-block;
+	color: rgb(255,255,255);
+	font-size: 1em;
+	overflow: hidden;
+	/*margin-top: 8px;*/
+}
+.flplaycell .flplaydesc{
+	position: absolute;
+	width: 100%;
+	background-color: rgba(10,0,0,.5);
+	height: 100%;
+	top:88%;
+	left: 0;
+}
+
+
+.flplaycell .flplaydesc .cellname{
+	margin: 10px auto;
+	width: 85%;
+	/*padding-bottom: 15px;*/
+	height: 1.1em;
+}
+.flplaycell .flplaydesc .descrition{
+	width: 85%;
+	margin: 0 auto;
+	border-bottom: solid rgb(255,255,255) 2px;
+	border-top: solid rgb(255,255,255) 2px;
+	/*height: 6.5em;*/
+	padding: 1em 0;
+}
+.flplaycell .flplaydesc .descrition > p{
+	font-size: .9em;
+	line-height: 1.5em;
+	text-indent: 1.8em;
+	color: rgb(230,230,230);
+	/*word-spacing: 2em;*/
+
+}
+.flplaycell .flplaydesc .cellname > span{
+	font-size: 1.1em;
+	font-weight: 400;
+	line-height: 1.1em;
+}
+.flplaycell .flplaydesc .cellname > a{
+	float: right;
+	font-size: .9em;
+	display: none;
+	line-height: 1.1em;
+	height: 1.1em;
+	position: relative;
+	top: .5em;
+	color: rgb(0,200,0);
+}
+
+.flplaycell .cellitem > div{
+	/*width: 44%;*/
+	float: left;
+	text-align: center;
+}
+.flplaycell .cellitem a{
+	display: block;
+	margin: 7px auto;
+	text-decoration: none;
+	font-size: .8em;
+}
+.ctwo > div{
+	width: 49%;
+}
+.cthree > div{
+	width: 33%;
+}

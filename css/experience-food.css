@@ -1,0 +1,114 @@
+/*美食概述*/
+#tab1,#tab2,#tab3,#tab4,#tab5{
+	background-color: rgb(255,255,255);
+	padding-bottom: 30px;
+}
+.exdesc,.famous,.foodstreet,.foodrecomend{
+	padding-top: 20px;
+	margin: 0 24px;
+}
+.lbcontent p{
+	line-height: 1.5em;
+	color: rgb(128,128,128);
+}
+.tabs p{
+	text-indent: 2em;
+	line-height: 1.5em;
+}
+.lbcontent .itemtitle{
+	font-size: 1.2em;
+	text-align: center;
+	font-weight: 500;
+	margin: 25px 0 20px 0;
+	color: rgb(0,0,0);
+
+}
+
+
+/*推荐,概述,名菜,食街*/
+.itemtitle{
+	font-size: 1.2em;
+	text-align: center;
+}
+
+
+/*美食推荐*/
+
+.lcell{
+	position: relative;
+	display: inline-block;
+	color: rgb(255,255,255);
+	font-size: 1em;
+	overflow: hidden;
+	margin-top: 8px;
+}
+.lcell .ldesc{
+	position: absolute;
+	width: 100%;
+	/*margin: 20px auto;*/
+	background-color: rgba(10,0,0,.5);
+	height: 65%;
+	top:95%;
+	left: 0;
+	
+}
+.lcell .ldesc p{
+	font-size: .9em;
+}
+.lcell .ldesc > p{
+	font-size: 1.1em;
+}
+
+
+.lcell .ldesc p{
+	margin-bottom: .4em;
+	margin: 10px;
+	color: rgb(230,230,230);
+}
+.lcell .ldesc > a{
+	margin-left: 10px;
+}
+
+
+/*.flexslider .slides li > img{float: left;margin: 8px}*/
+
+
+/* 名菜馆 */
+
+#tab1 .famous .famouscontent{
+	position: relative;
+
+}
+#tab1 .famous .famouscontent ul{
+	list-style: none;
+}
+#tab1 .famous .famouscontent .famousdsc{
+	position: absolute;
+	left: 400px;
+	top: 0;
+}
+
+#tab1 .famous .famouscontent .famousdsc ul li{
+	float: left;
+	width: 200px;
+	/*text-align: center;*/
+	margin-top: 5px;
+	margin-right: 50px;
+}
+#tab1 .famous .famouscontent > a{
+	position: absolute;
+	bottom: 10px; right: 10px;
+}
+
+/*美食街*/
+
+
+
+/*#tab1 .flexslider{margin-left: 24px;}*/
+#tab1 .flexslider { position: relative; height: 610px; background: url(../images/loading.gif) 50% no-repeat;}
+#tab1 .slides { position: relative; z-index: 1;}
+#tab1 .slides li { height: 590px;}
+#tab1 .flex-control-nav { position: absolute; bottom: 0px; z-index: 2; width: 100%; text-align: center;}
+#tab1 .flex-control-nav li { display: inline-block; width: 14px; height: 14px; margin: 0 5px; *display: inline; zoom: 1;}
+#tab1 .flex-control-nav a { display: inline-block; width: 14px; height: 14px; line-height: 40px; overflow: hidden; background: url(../images/dot.png) right 0 no-repeat; cursor: pointer;}
+#tab1 .flex-control-nav .flex-active { background-position: 0 0;}

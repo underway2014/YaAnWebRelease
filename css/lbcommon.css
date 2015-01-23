@@ -1,0 +1,33 @@
+*{
+	padding: 0;
+	border: none;
+	margin: 0;
+	outline-style: none;
+}
+
+/* 水平 虚线*/
+div.chr{
+	width: 100%;
+	height: 0px;
+	color: rgb(233,232,234);
+	outline-width: 1px;
+	outline-style: dotted;
+	margin: 15px auto;
+}
+
+.clearfix:after{
+  content: ""; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;  
+  }
+
+.clearfix {
+  /* 触发 hasLayout */ 
+  zoom: 1; 
+  }
+
+ .text-overflow{
+display:block;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
